@@ -45,6 +45,10 @@ namespace SimpleCalculator
                     Console.WriteLine("Running discriminant");
                     Discriminant.StartProgram();
                     break;
+                default:
+                    Console.WriteLine("No such figure");
+                    ShowMenu();
+                    break;
             }
         }
     }
