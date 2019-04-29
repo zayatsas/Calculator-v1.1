@@ -8,7 +8,8 @@ namespace SimpleCalculator
         private enum Tasks
         {
             Calculator = 1,
-            Discriminant
+            Discriminant,
+            Matrix
         }
 
         public static void Main(string[] args)
@@ -21,6 +22,7 @@ namespace SimpleCalculator
             Console.WriteLine("================Menu=============");
             Console.WriteLine("Calculator - 1");
             Console.WriteLine("Discriminant - 2");
+            Console.WriteLine("Matrix - 3");
             Console.WriteLine("=================================");
             Console.WriteLine(" ");
             Console.WriteLine("Enter a task");
@@ -45,7 +47,10 @@ namespace SimpleCalculator
                     Console.WriteLine("Running discriminant");
                     Discriminant.StartProgram();
                     break;
-                default:
+                case 3:
+                    Maxrix.StartProgram();
+                    break;
+               default:
                     Console.WriteLine("No such figure");
                     ShowMenu();
                     break;
