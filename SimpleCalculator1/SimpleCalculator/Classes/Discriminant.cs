@@ -4,7 +4,6 @@ namespace SimpleCalculator.Classes
 {
     public class Discriminant
     {
-
         public static void StartProgram()
         {
             Console.WriteLine("Enter a three X1, X2, X3:");
@@ -12,19 +11,18 @@ namespace SimpleCalculator.Classes
             Console.Write("Enter a X1 value: ");
             while (!int.TryParse(Console.ReadLine(), out iFirstVal))
             {
-                Console.Write("Enter a integer value! X1 value: ");
+                Console.Write("Enter a one interger X1 value! X1 value: ");
             }
             Console.Write("Enter a X2 value: ");
             while (!int.TryParse(Console.ReadLine(), out iSecondVal))
             {
-                Console.Write("Enter a integer value! X2 value: ");
+                Console.Write("Enter a one interger X2 value! X2 value: ");
             }
             Console.Write("Enter a X3 value: ");
             while (!int.TryParse(Console.ReadLine(), out iThirdVal))
             {
-                Console.Write("Enter a integer value! X3 value: ");
+                Console.Write("Enter a one interger X3 value! X3 value: ");
             }
-
             CheckValues(iFirstVal, iSecondVal, iThirdVal);
         }
 
