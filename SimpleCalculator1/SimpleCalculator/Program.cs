@@ -24,7 +24,6 @@ namespace SimpleCalculator
             Console.WriteLine("Discriminant - 2");
             Console.WriteLine("Matrix - 3");
             Console.WriteLine("=================================");
-            Console.WriteLine(" ");
             Console.WriteLine("Enter a task");
             Tasks tasks = 0;
             ChooseTask(tasks);
@@ -49,6 +48,7 @@ namespace SimpleCalculator
                     break;
                 case 3:
                     Maxrix.StartProgram();
+                    ShowMenu();
                     break;
                default:
                     Console.WriteLine("No such figure");

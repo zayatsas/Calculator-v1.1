@@ -6,8 +6,11 @@ namespace SimpleCalculator.Classes
 {
     class Maxrix
     {
-        public static void StartProgram() {
-            Console.WriteLine("In developing");
+        public static void StartProgram()
+        {
+            Console.WriteLine("===========================");
+            Console.WriteLine("In developing!");
+            Console.WriteLine("===========================\n");
         }
 
         private static void ReturnMenu()

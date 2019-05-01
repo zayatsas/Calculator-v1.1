@@ -15,10 +15,17 @@ namespace SimpleCalculator.Classes
         public static void StartProgram()
         {
             Operation operation = 0;
-            Console.WriteLine("Enter a first value: ");
-            int iFirstVal = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter a second value: ");
-            int iSecondVal = Convert.ToInt32(Console.ReadLine());
+            int iFirstVal = 0, iSecondVal = 0;
+            Console.Write("Enter a first value: ");
+            while (!int.TryParse(Console.ReadLine(), out iFirstVal))
+            {
+                Console.Write("Enter a integer value! Second value: ");
+            }
+            Console.Write("Enter a second value: ");
+            while (!int.TryParse(Console.ReadLine(), out iSecondVal))
+            {
+                Console.Write("Enter a integer value! Second value: ");
+            }
 
             OutputOperations();
             ChooseOperation(iFirstVal, iSecondVal, operation);
@@ -35,9 +42,9 @@ namespace SimpleCalculator.Classes
             Console.WriteLine("===========================================");
         }
 
-        private static int ChooseOperation(int iFirstVal, int iSecondVal, Operation operation)
+        private static double ChooseOperation(int iFirstVal, int iSecondVal, Operation operation)
         {
-            int result = 0;
+            double result = 0.0;
             int iChooseOperation = Convert.ToInt32(operation);
             iChooseOperation = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(" ");
@@ -56,7 +63,7 @@ namespace SimpleCalculator.Classes
                     Console.WriteLine($"Result = {result}");
                     break;
                 case 4:
-                    result = iFirstVal / iSecondVal;
+                    result = (double)iFirstVal / iSecondVal;
                     Console.WriteLine($"Result = {result}");
                     break;
                 default:
