@@ -2,9 +2,9 @@
 
 namespace SimpleCalculator.Classes
 {
-   public class Calculator
+    public class Calculator
     {
-        private enum Operation
+        private enum Operation 
         {
             Addition = 1,
             Substraction,
