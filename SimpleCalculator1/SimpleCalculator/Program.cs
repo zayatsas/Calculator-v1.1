@@ -46,6 +46,8 @@ namespace SimpleCalculator
                     Console.WriteLine("Running discriminant");
                     Discriminant.StartProgram();
                     break;
+                case 3:
+                    Console.WriteLine("Running matrix");
                default:
                     Console.WriteLine("No such figure");
                     ShowMenu();
